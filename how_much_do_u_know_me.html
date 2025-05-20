@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>How much fo you know me?</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .question_container {
+            background-color: lavender;
+            padding: 20;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: bisque;
+            color: rgb(13, 32, 49);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: blanchedalmond;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body <div class="question_container">
+    <p>What is my complete name?</p>
+    <input type="text" id="answerInput">
+    <button onclick="checkAnswer()">Submit</button>
+    <div id="result"></div>
+    </div>
+
+
+
+
+    <script>
+        function checkAnswer() {
+            let answer =
+                document.getElementById("answerInput").value;
+            let resultDiv =
+                document.getElementById("result");
+
+            if (answer === "Elaiza May Jamora Eco") {
+                resultDiv.textContent = "corect! you really do know me!";
+                resultDiv.style.color = "green";
+            } else {
+                resultDiv.textContent = "Incorrect. Try again.";
+                resultDiv.style.color = "red";
+            }
+
+            if (answer === "elaiza may jamora eco") {
+                resultDiv.textContent = "corect! you really do know me!";
+                resultDiv.style.color = "green";
+            } else {
+                resultDiv.textContent = "Incorrect. Try again.";
+                resultDiv.style.color = "red";
+            }
+
+            if (answer === "ELAIZA MAY JAMORA ECO") {
+                resultDiv.textContent = "corect! you really do know me!";
+                resultDiv.style.color = "green";
+            } else {
+                resultDiv.textContent = "Incorrect. Try again.";
+                resultDiv.style.color = "red";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
